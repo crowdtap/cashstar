@@ -3,11 +3,6 @@ $:.push File.expand_path("../lib", __FILE__)
 require "cashstar/version"
 
 Gem::Specification.new do |s|
-  s.add_dependency 'hashie', '~> 1.2.0'
-  s.add_dependency 'faraday', '~> 0.8.0'
-  s.add_dependency 'faraday_middleware', '~> 0.8.0'
-  s.add_dependency 'multi_json', '~> 1.2.0'
-  s.add_dependency 'multi_xml', '~> 0.5.0'
   s.name        = "cashstar"
   s.version     = Cashstar::VERSION
   s.platform    = Gem::Platform::RUBY
@@ -23,4 +18,14 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
   #s.files = Dir['lib/**/*.rb']
+
+  s.add_dependency 'hashie', '~> 1.2.0'
+  s.add_dependency 'faraday', '~> 0.8.0'
+  s.add_dependency 'faraday_middleware', '~> 0.8.0'
+  s.add_dependency 'multi_json', '~> 1.2.0'
+  s.add_dependency 'multi_xml', '~> 0.5.0'
+
+  s.add_development_dependency 'rspec', '~> 2.12'
+  s.add_development_dependency 'mocha', '~> 0.13'
+  s.add_development_dependency 'webmock', '~> 1.9'
 end

@@ -14,6 +14,7 @@ module Cashstar
       Cashstar::Client.new(options)
     end
 
+    private
     # Delegate to Cashstar::Client
     def method_missing(method, *args, &block)
       return super unless new.respond_to?(method)

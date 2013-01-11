@@ -27,7 +27,7 @@ module Cashstar
     #
     # @note This is configurable in case you want to connect to CashStar's test environment at https://api-semiprod.cashstar.com
     DEFAULT_ENDPOINT = 'https://api-semiprod.cashstar.com'.freeze
-    
+
     # By default, we do not pass card numbers and pins back, only url's and challenge codes. This helps default to the most 
     # secure mode of usage.
     DEFAULT_RETURN_CARD_NUMBERS = false
@@ -54,7 +54,7 @@ module Cashstar
     def configure
       yield self
     end
-    
+
     # Convienince method determining if pointed to the test env.
     def test?
       self.endpoint == DEFAULT_ENDPOINT
