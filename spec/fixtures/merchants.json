@@ -1,0 +1,17 @@
+{
+    "merchants": {
+        "transaction_id": "12421413",
+        "merchant": [
+            {
+                "name": "Widget Store",
+                "legal_name": "The Widget Store, Inc.",
+                "merchant_code": "TWS"
+            },
+            {
+                "name": "Yummy Food",
+                "legal_name": "Yummy Food",
+                "merchant_code": "YUM"
+            }
+        ]
+    }
+}
