@@ -13,15 +13,15 @@ module Cashstar
     def connection(options={})
       merged_options = faraday_options.merge({
         :headers => {
-          'Accept' => "application/json",
-          'User-Agent' => user_agent,
+          'Accept'       => "application/json",
+          'User-Agent'   => user_agent,
           'Content-Type' => "application/json"
         },
         :ssl => {:verify => false},
         :url => options.fetch(:endpoint, api_endpoint)
       })
-      
-      faraday = Faraday.new(merged_options) do |builder|
+
+      Faraday.new(merged_options) do |builder|
         builder.use Faraday::Request::BasicAuth, authentication if authenticated?
         builder.use Faraday::Request::UrlEncoded
         builder.use Faraday::Response::RaiseHttp4xx

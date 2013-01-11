@@ -19,6 +19,6 @@ module Cashstar
     include Cashstar::Client::Faceplates
     include Cashstar::Client::Catalog
     include Cashstar::Client::OrderMethods
-    include Cashstar::Client::GiftCardMethods          
+    include Cashstar::Client::GiftCardMethods
   end
 end
