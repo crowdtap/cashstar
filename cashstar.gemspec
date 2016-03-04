@@ -20,8 +20,8 @@ Gem::Specification.new do |s|
   #s.files = Dir['lib/**/*.rb']
 
   s.add_dependency 'hashie', '~> 1.2.0'
-  s.add_dependency 'faraday', '~> 0.8.0'
-  s.add_dependency 'faraday_middleware', '~> 0.8.0'
+  s.add_dependency 'faraday', '~> 0.9.0'
+  s.add_dependency 'faraday_middleware', '~> 0.9.0'
   s.add_dependency 'multi_json', '~> 1.8.0'
   s.add_dependency 'multi_xml', '~> 0.5.0'
 
